@@ -1,0 +1,24 @@
+# disable the original surfaceflinger in case it is enabled by another unit.
+# this unit is included first so it will overwrite any other surfaceflinger
+# definitions.
+
+service surfaceflinger /system/bin/surfaceflinger_HYBRIS_DISABLED
+    disabled
+
+# a custom surfaceflinger service which can be started via a systemd service
+# dynamically in case it is required.
+service surfaceflinger_hybris /system/bin/surfaceflinger
+    class core animation
+    # in hybris surfaceflinger needs to run as root, otherwise the LD_PRELOAD is ignored due to AT_SECURE
+    # this is unfortunate but given that most adaptations will disable surfaceflinger and use HWC/HWC2
+    # this should be fine.
+    user root
+    group system graphics drmrpc readproc
+    onrestart restart zygote
+    writepid /dev/stune/foreground/tasks
+    socket pdx/system/vr/display/client     stream 0666 system graphics u:object_r:pdx_display_client_endpoint_socket:s0
+    socket pdx/system/vr/display/manager    stream 0666 system graphics u:object_r:pdx_display_manager_endpoint_socket:s0
+    socket pdx/system/vr/display/vsync      stream 0666 system graphics u:object_r:pdx_display_vsync_endpoint_socket:s0
+    setenv LD_PRELOAD /usr/libexec/droid-hybris/system/lib64/libsurfaceflinger.so
+    # disabled and only started if required in compositor config via a systemd service
+    disabled

@@ -1,0 +1,13 @@
+[Unit]
+Description=start surfaceflinger if required by lipstick configuration
+After=droid-hal-init.service
+DefaultDependencies=no
+Conflicts=shutdown.target
+
+[Service]
+Type=oneshot
+EnvironmentFile=-/var/lib/environment/compositor/*.conf
+ExecStart=/bin/sh /usr/bin/droid/droid-start-surfaceflinger.sh
+
+[Install]
+WantedBy=graphical.target
