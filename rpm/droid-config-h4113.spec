@@ -14,6 +14,8 @@
 # Other screen sizes and ratios will require more trial-and-error.
 %define pixel_ratio 1.75
 
+%define provides_own_board_mapping 1
+
 %include droid-configs-device/droid-configs.inc
 
 # IMPORTANT if you want to comment out any macros in your .spec, delete the %
