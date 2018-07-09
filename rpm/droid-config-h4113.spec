@@ -17,6 +17,9 @@
 %define provides_own_board_mapping 1
 %define out_of_image_files 1
 
+# Device-specific usb-moded configuration
+Provides: usb-moded-configs
+
 %include droid-configs-device/droid-configs.inc
 
 # IMPORTANT if you want to comment out any macros in your .spec, delete the %
