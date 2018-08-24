@@ -104,7 +104,7 @@ count=0
 for SERIALNO in $FASTBOOT_DEVICES; do
   PRODUCT=$($FASTBOOTCMD_NO_DEVICE -s $SERIALNO getvar product 2>&1 | head -n1 | cut -d ' ' -f2)
 
-  if [ ! -z "$(echo $PRODUCT | grep -e "H4113")" ]; then
+  if [ ! -z "$(echo $PRODUCT | grep -e "H3113" -e "H4113")" ]; then
     SERIALNUMBERS="$SERIALNO $SERIALNUMBERS"
     ((++count))
   fi
@@ -139,7 +139,7 @@ if [ -z ${SAILFISH_IMAGE_PATH} ]; then
 fi
 
 IMAGES=(
-"boot ${SAILFISH_IMAGE_PATH}hybris-boot.img"
+"boot_a ${SAILFISH_IMAGE_PATH}hybris-boot.img"
 "userdata ${SAILFISH_IMAGE_PATH}sailfish.img001"
 "system_b ${SAILFISH_IMAGE_PATH}fimage.img001"
 )
