@@ -139,7 +139,7 @@ if [ -z ${SAILFISH_IMAGE_PATH} ]; then
 fi
 
 IMAGES=(
-"boot ${SAILFISH_IMAGE_PATH}hybris-boot.img"
+"boot_a ${SAILFISH_IMAGE_PATH}hybris-boot.img"
 "userdata ${SAILFISH_IMAGE_PATH}sailfish.img001"
 "system_b ${SAILFISH_IMAGE_PATH}fimage.img001"
 )
