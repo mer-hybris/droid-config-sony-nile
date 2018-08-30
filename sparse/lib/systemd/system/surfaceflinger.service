@@ -10,4 +10,4 @@ EnvironmentFile=-/var/lib/environment/compositor/*.conf
 ExecStart=/bin/sh /usr/bin/droid/droid-start-surfaceflinger.sh
 
 [Install]
-WantedBy=graphical.target
+WantedBy=actdead.target graphical.target
