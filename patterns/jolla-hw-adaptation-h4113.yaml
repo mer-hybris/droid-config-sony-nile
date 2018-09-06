@@ -76,5 +76,8 @@ Requires:
 #- qt5-qtmultimedia-plugin-mediaservice-irisradio
 #- jolla-mediaplayer-radio
 
+# For devices with SD Card
+- udisks2
+
 Summary: Jolla HW Adaptation h4113
 
