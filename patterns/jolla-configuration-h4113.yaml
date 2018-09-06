@@ -1,10 +1,15 @@
-# Feel free to disable non-critical HA parts during devel by commenting lines out
-# Generated in hadk by executing: rpm/dhd/helpers/add_new_device.sh
-
 Description: Pattern with packages for h4113 configurations
 Name: jolla-configuration-h4113
 Requires:
-- pattern:jolla-hw-adaptation-h4113
+- pattern:jolla-hw-adaptation-pioneer
+
+- droid-config-h4113-sailfish
+- droid-config-h4113-pulseaudio-settings
+- droid-config-h4113-policy-settings
+- droid-config-h4113-preinit-plugin
+- droid-config-h4113-flashing
+- droid-config-h4113-bluez5
+- droid-hal-version-h4113
 
 - patterns-sailfish-applications
 - patterns-sailfish-ui

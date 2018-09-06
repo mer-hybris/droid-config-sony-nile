@@ -1,19 +1,9 @@
-# Feel free to disable non-critical HA parts during devel by commenting lines out
-# Generated in hadk by executing: rpm/dhd/helpers/add_new_device.sh
-
-Description: Pattern with packages for h4113 HW Adaptation
-Name: jolla-hw-adaptation-h4113
+Description: Pattern with packages for pioneer HW Adaptation
+Name: jolla-hw-adaptation-pioneer
 Requires:
-- droid-hal-h4113
-- droid-hal-h4113-img-boot
-- droid-hal-h4113-img-recovery
-- droid-config-h4113-sailfish
-- droid-config-h4113-pulseaudio-settings
-- droid-config-h4113-policy-settings
-- droid-config-h4113-preinit-plugin
-- droid-config-h4113-flashing
-- droid-config-h4113-bluez5
-- droid-hal-version-h4113
+- droid-hal-pioneer
+- droid-hal-pioneer-img-boot
+- droid-hal-pioneer-img-recovery
 
 # Hybris packages
 - libhybris-libEGL
@@ -79,5 +69,5 @@ Requires:
 # For devices with SD Card
 - udisks2
 
-Summary: Jolla HW Adaptation h4113
+Summary: Jolla HW Adaptation pioneer
 
