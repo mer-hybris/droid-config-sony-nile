@@ -1,5 +1,6 @@
 /etc/ofono/ril_subscription.d/dual-sim.conf
 /usr/share/ssu/board-mappings.d/10-h4113.ini
+/usr/share/ssu/board-mappings.d/10-h4213.ini
 /usr/share/ssu/board-mappings.d/10-h3213.ini
 /var/lib/environment/compositor/droid-hal-device-hx213.conf
 /etc/dconf/db/vendor.d/lipstick-configs-hx213.txt
