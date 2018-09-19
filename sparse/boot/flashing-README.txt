@@ -9,7 +9,7 @@ system with Sailfish X, you will need to be able to unlock the bootloader of
 your device so that it can be flashed with a new operating system. This process
 is supported by Sony as part of their Open Devices programme:
 
-https://developer.sonymobile.com/open-devices/
+https://developer.sony.com/develop/open-devices/
  
 The best way to get an unlockable device is to buy is a brand new Xperia™ XA2 in 
 a sales box. If you are tempted to buy second-hand please be aware that there 
@@ -19,7 +19,7 @@ been SIM unlocked. It will not be possible to flash Sailfish X onto these
 devices. Instructions for checking the unlockability of Xperia™ models can be
 found on the Sony Developer World website here: 
 
-https://developer.sonymobile.com/unlockbootloader/
+https://developer.sony.com/develop/open-devices/get-started/unlock-bootloader/
 
 If in doubt, ask the vendor to check this before you buy.
 
@@ -35,23 +35,15 @@ more difficult once the bootloader has been unlocked.
 Make sure that the system language of your Xperia™ device is set to English 
 before you continue.
 
-Go to https://developer.sonymobile.com/unlockbootloader/ website and select the
-model of your device Xperia™ XA2. You should see additional instructions to
-prepare your device for unlocking:
+Go to https://developer.sony.com/develop/open-devices/get-started/unlock-bootloader/
+website and select the model of your device Xperia™ XA2.
+You should see additional instructions to prepare your device for unlocking:
 
-* Enter your e-mail address, accept the terms and conditions, then submit 
-  the form. You will receive an email from Sony giving you a link to click in 
-  order to access the next stage. NOTE: If you have not received an e-mail 
-  within a few minutes, remember to check your spam folder. Gmail, for instance,
-  may automatically flag the Sony e-mail as spam.
+* Type the IMEI, accept the terms & conditions and press submit.
+  Please note the details of how this process affects your Sony warranty.
+  At this point you should get unlock code. Please write it down somewhere. 
 
-* Open the link in the received e-mail and enter the IMEI code of your device 
-  (18 digits). You can find your IMEI code printed on the retail box, or by 
-  typing *#06# into the Android Phone Dialer. If you have trouble with this, 
-  further instructions can be found on the Sony website.
-
-* Accept the terms & conditions to proceed. Please note the details of how this
-  process affects your Sony warranty.
+* Once you have the unlock code press the "How to unlock bootloader"
 
 Now read and follow Sony's instructions on how to connect your device to your PC
 in fastbook mode and unlock the bootloader. Don't miss the step to enable 
