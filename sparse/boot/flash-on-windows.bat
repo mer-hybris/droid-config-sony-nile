@@ -61,7 +61,7 @@ exit /b 1
 for %%d in ( %serialnumbers% ) do (
   set fastbootcmd=%fastbootcmd_no_devic% -s %%d
   @call :getvar product
-  findstr /R /C:"product: h4113" %tmpflashfile% >NUL 2>NUL
+  findstr /R /C:"product: @DEVICE@" %tmpflashfile% >NUL 2>NUL
   if not errorlevel 1 (
     call :new_product_found %%d
   )
