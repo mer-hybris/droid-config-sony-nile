@@ -24,6 +24,12 @@ Provides: usb-moded-configs
 Provides: ofono-configs
 Obsoletes: ofono-configs-mer
 
+# Community builds may use the system partition
+%if 0%{?_obs_build_project:1}
+Requires: droid-system-discovery-%{rpm_device}
+Requires: droid-system-vendor-discovery-%{rpm_device}
+%endif
+
 %include droid-configs-device/droid-configs.inc
 
 # IMPORTANT if you want to comment out any macros in your .spec, delete the %
