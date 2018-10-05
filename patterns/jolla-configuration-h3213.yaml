@@ -1,0 +1,25 @@
+Description: Pattern with packages for h3213 configurations
+Name: jolla-configuration-h3213
+Requires:
+- pattern:jolla-hw-adaptation-discovery
+
+- droid-config-h3213-sailfish
+- droid-config-h3213-pulseaudio-settings
+- droid-config-h3213-policy-settings
+- droid-config-h3213-preinit-plugin
+- droid-config-h3213-flashing
+- droid-config-h3213-bluez5
+- droid-hal-version-h3213
+
+- patterns-sailfish-applications
+- patterns-sailfish-ui
+- patterns-sailfish-cellular-apps
+
+- sailfish-content-graphics-z@ICON_RES@
+
+- geoclue-provider-mlsdb
+- csd
+- jolla-settings-system-flashlight
+- mapplauncherd-booster-silica-qt5-media
+
+Summary: Jolla Configuration h3213
