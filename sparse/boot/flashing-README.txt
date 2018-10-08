@@ -4,7 +4,7 @@
 
 = STEP 1: GETTING AN XPERIA™ XA2 =
 
-Get an Xperia™ XA2, model number H4113. To be able to replace the Sony Android
+Get an Xperia™ XA2. To be able to replace the Sony Android
 system with Sailfish X, you will need to be able to unlock the bootloader of 
 your device so that it can be flashed with a new operating system. This process
 is supported by Sony as part of their Open Devices programme:
