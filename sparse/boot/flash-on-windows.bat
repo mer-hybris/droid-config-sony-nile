@@ -37,7 +37,7 @@ echo(
 echo Searching a compatible device...
 
 :: Ensure that we are flashing right device
-:: H4113 - Xperia XA2 Dual SIM
+@DEVICES@
 
 @call :devices
 

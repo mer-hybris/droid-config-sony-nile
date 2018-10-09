@@ -104,7 +104,7 @@ count=0
 for SERIALNO in $FASTBOOT_DEVICES; do
   PRODUCT=$($FASTBOOTCMD_NO_DEVICE -s $SERIALNO getvar product 2>&1 | head -n1 | cut -d ' ' -f2)
 
-  if [ ! -z "$(echo $PRODUCT | grep -e "H3113" -e "H4113")" ]; then
+  if [ ! -z "$(echo $PRODUCT | grep @DEVICES@)" ]; then
     SERIALNUMBERS="$SERIALNO $SERIALNUMBERS"
     ((++count))
   fi
