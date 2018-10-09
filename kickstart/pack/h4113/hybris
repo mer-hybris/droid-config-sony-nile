@@ -145,6 +145,11 @@ mv ${FILES} ${RELEASENAME}/
 
 # Calculate md5sums of files included to the archive
 cd ${RELEASENAME}
+
+# Set $DEVICE in flash scripts
+sed -e "s/\@DEVICE\@/@DEVICE@/g" -i flash.sh
+sed -e "s/\@DEVICE\@/@DEVICE@/g" -i flash-on-windows.bat
+
 md5sum * > $MD5SUMFILE
 cd ..
 
