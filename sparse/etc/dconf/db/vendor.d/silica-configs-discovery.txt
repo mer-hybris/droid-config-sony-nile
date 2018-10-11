@@ -1,0 +1,5 @@
+[desktop/sailfish/silica]
+theme_pixel_ratio=1.5
+theme_icon_subdir='z1.5'
+icon_size_launcher=172
+

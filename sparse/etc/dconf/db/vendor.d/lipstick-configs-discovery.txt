@@ -6,7 +6,7 @@ boundaryWidth=48
 pressDelay=800
 
 [lipstick/screen/primary]
-physicalDotsPerInch=480
+physicalDotsPerInch=367
 width=1080
 height=1920
 
