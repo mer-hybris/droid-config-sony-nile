@@ -4,3 +4,4 @@
 /usr/share/ssu/board-mappings.d/10-h3213.ini
 /var/lib/environment/compositor/droid-hal-device-discovery.conf
 /etc/dconf/db/vendor.d/lipstick-configs-discovery.txt
+/etc/dconf/db/vendor.d/silica-configs-discovery.txt
