@@ -3,13 +3,13 @@ Name: jolla-configuration-h4213
 Requires:
 - pattern:jolla-hw-adaptation-discovery
 
-- droid-config-h4113-sailfish
-- droid-config-h4113-pulseaudio-settings
-- droid-config-h4113-policy-settings
-- droid-config-h4113-preinit-plugin
-- droid-config-h4113-flashing
-- droid-config-h4113-bluez5
-- droid-hal-version-h4113
+- droid-config-h4213-sailfish
+- droid-config-h4213-pulseaudio-settings
+- droid-config-h4213-policy-settings
+- droid-config-h4213-preinit-plugin
+- droid-config-h4213-flashing
+- droid-config-h4213-bluez5
+- droid-hal-version-h4213
 
 - patterns-sailfish-applications
 - patterns-sailfish-ui
