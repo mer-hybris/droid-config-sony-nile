@@ -1,0 +1,28 @@
+Description: Pattern with packages for h4413 configurations
+Name: jolla-configuration-h4413
+Requires:
+- pattern:jolla-hw-adaptation-voyager
+
+- droid-config-h4413-sailfish
+- droid-config-h4413-pulseaudio-settings
+- droid-config-h4413-policy-settings
+- droid-config-h4413-preinit-plugin
+- droid-config-h4413-flashing
+- droid-config-h4413-bluez5
+- droid-hal-version-h4413
+
+- patterns-sailfish-applications
+- patterns-sailfish-ui
+- patterns-sailfish-cellular-apps
+
+- sailfish-content-graphics-z@ICON_RES@
+
+- jolla-settings-networking-multisim
+
+- geoclue-provider-mlsdb
+- csd
+- jolla-settings-system-flashlight
+- mapplauncherd-booster-silica-qt5-media
+
+Summary: Jolla Configuration h4413
+

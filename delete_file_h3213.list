@@ -1,8 +1,12 @@
 /etc/ofono/ril_subscription.d/dual-sim.conf
 /var/lib/environment/compositor/droid-hal-device-pioneer.conf
+/var/lib/environment/compositor/droid-hal-device-voyager.conf
 /etc/dconf/db/vendor.d/lipstick-configs-pioneer.txt
+/etc/dconf/db/vendor.d/lipstick-configs-voyager.txt
 /etc/dconf/db/vendor.d/silica-configs-pioneer.txt
+/etc/dconf/db/vendor.d/silica-configs-voyager.txt
 /usr/share/ssu/board-mappings.d/10-h4113.ini
 /usr/share/ssu/board-mappings.d/10-h4213.ini
+/usr/share/ssu/board-mappings.d/10-h4413.ini
 /usr/share/ssu/board-mappings.d/10-h3113.ini
 

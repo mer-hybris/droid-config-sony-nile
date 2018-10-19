@@ -151,6 +151,9 @@ elif [ "@DEVICEMODEL@" = "h4113" ]; then
 elif [ "@DEVICEMODEL@" = "h4213" ]; then
   sed -e "s/\@DEVICES\@/\-e \"H4213\" -e \"H4233\"/g" -i flash.sh
   sed -e "s/\@DEVICES\@/:: H4213\r\n:: H4233/g" -i flash-on-windows.bat
+elif [ "@DEVICEMODEL@" = "h4413" ]; then
+  sed -e "s/\@DEVICES\@/\-e \"H4413\" -e \"H4493\"/g" -i flash.sh
+  sed -e "s/\@DEVICES\@/:: H4413\r\n:: H4493/g" -i flash-on-windows.bat
 fi
 
 mkdir -p ${RELEASENAME}
