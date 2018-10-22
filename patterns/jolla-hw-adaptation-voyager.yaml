@@ -1,10 +1,10 @@
-Description: Pattern with packages for pioneer HW Adaptation
-Name: jolla-hw-adaptation-pioneer
+Description: Pattern with packages for voyager HW Adaptation
+Name: jolla-hw-adaptation-voyager
 Requires:
-- droid-hal-pioneer
-- droid-hal-pioneer-img-boot
-- droid-hal-pioneer-img-recovery
-- droid-hal-pioneer-tools
+- droid-hal-voyager
+- droid-hal-voyager-img-boot
+- droid-hal-voyager-img-recovery
+- droid-hal-voyager-tools
 
 # Hybris packages
 - libhybris-libEGL
@@ -70,5 +70,5 @@ Requires:
 # For devices with SD Card
 - udisks2
 
-Summary: Jolla HW Adaptation pioneer
+Summary: Jolla HW Adaptation voyager
 
