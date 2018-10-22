@@ -4,7 +4,7 @@ Requires:
 - droid-hal-discovery
 - droid-hal-discovery-img-boot
 - droid-hal-discovery-img-recovery
-
+- droid-hal-discovery-tools
 
 # Hybris packages
 - libhybris-libEGL

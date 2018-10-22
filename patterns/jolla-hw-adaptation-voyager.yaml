@@ -4,6 +4,7 @@ Requires:
 - droid-hal-voyager
 - droid-hal-voyager-img-boot
 - droid-hal-voyager-img-recovery
+- droid-hal-voyager-tools
 
 # Hybris packages
 - libhybris-libEGL
