@@ -145,6 +145,9 @@ if [ "@DEVICEMODEL@" = "h3113" ]; then
 elif [ "@DEVICEMODEL@" = "h3213" ]; then
   sed -e "s/\@DEVICES\@/\-e \"H3213\" -e \"H3223\"/g" -i flash.sh
   sed -e "s/\@DEVICES\@/:: H3213\r\n:: H3223/g" -i flash-on-windows.bat
+elif [ "@DEVICEMODEL@" = "h3413" ]; then
+  sed -e "s/\@DEVICES\@/\-e \"H3413\"/g" -i flash.sh
+  sed -e "s/\@DEVICES\@/:: H3413/g" -i flash-on-windows.bat
 elif [ "@DEVICEMODEL@" = "h4113" ]; then
   sed -e "s/\@DEVICES\@/\-e \"H4113\" -e \"H4133\"/g" -i flash.sh
   sed -e "s/\@DEVICES\@/:: H4113\r\n:: H4133/g" -i flash-on-windows.bat
