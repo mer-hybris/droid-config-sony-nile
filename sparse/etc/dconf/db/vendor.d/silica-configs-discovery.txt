@@ -1,3 +1,4 @@
 [desktop/sailfish/silica]
 theme_pixel_ratio=1.5
 theme_icon_subdir='z1.5'
+padding_small=14
