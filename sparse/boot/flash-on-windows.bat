@@ -149,6 +149,8 @@ exit /b 1
 @call :fastboot flash boot hybris-boot.img
 @call :fastboot flash system_b fimage.img001
 @call :fastboot flash userdata sailfish.img001
+@call :fastboot flash vendor_a vendor.img001
+@call :fastboot flash vendor_b vendor.img001
 @call :fastboot flash oem %blobfilename%
 
 :: NOTE: Do not reboot here as the battery might not be in the device
