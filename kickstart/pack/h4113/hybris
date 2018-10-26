@@ -20,6 +20,13 @@ fi
 
 RELEASENAME=${NAME// /_}-${SAILFISH_CUSTOMER// /_}${SAILFISH_CUSTOMER:+-}${EXTRA_NAME// /_}$RND_FLAVOUR${RND_FLAVOUR:+-}$VERSION_ID$DEVICE_ID
 
+# Remove /opt mounting from fstab, systemd will handle it
+mkdir root
+mount -o loop root.img root
+sed -i '/\/opt/d' root/etc/fstab
+umount root
+rm -rf root
+
 IMGSECTORS=0
 IMGBLOCKS=0
 IMGSIZE=0
@@ -132,6 +139,10 @@ mv temp.img sailfish.img
 # To make the file magic right lets convert to single file sparse image.
 /usr/bin/img2simg sailfish.img sailfish.img001
 rm sailfish.img
+
+# To make the file magic right lets convert to single file sparse image.
+/usr/bin/img2simg vendor.img vendor.img001
+rm vendor.img
 
 chmod 755 flash.*
 
