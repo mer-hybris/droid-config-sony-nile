@@ -140,6 +140,7 @@ fi
 
 IMAGES=(
 "boot_a ${SAILFISH_IMAGE_PATH}hybris-boot.img"
+"boot_b ${SAILFISH_IMAGE_PATH}hybris-boot.img"
 "userdata ${SAILFISH_IMAGE_PATH}sailfish.img001"
 "system_b ${SAILFISH_IMAGE_PATH}fimage.img001"
 "vendor_a ${SAILFISH_IMAGE_PATH}vendor.img001"
@@ -207,7 +208,7 @@ for IMAGE in "${IMAGES[@]}"; do
 done
 
 echo "Flashing oem partition.."
-$FLASHCMD oem $BLOBS
+$FLASHCMD oem_a $BLOBS
 
 echo
 echo "Flashing completed."

@@ -146,12 +146,13 @@ exit /b 1
 :: happens when flashing is done.
 @echo on
 
-@call :fastboot flash boot hybris-boot.img
+@call :fastboot flash boot_a hybris-boot.img
+@call :fastboot flash boot_b hybris-boot.img
 @call :fastboot flash system_b fimage.img001
 @call :fastboot flash userdata sailfish.img001
 @call :fastboot flash vendor_a vendor.img001
 @call :fastboot flash vendor_b vendor.img001
-@call :fastboot flash oem %blobfilename%
+@call :fastboot flash oem_a %blobfilename%
 
 :: NOTE: Do not reboot here as the battery might not be in the device
 :: and in such situation we should not reboot the device.
