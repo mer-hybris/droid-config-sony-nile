@@ -24,6 +24,8 @@ Provides: usb-moded-configs
 Provides: ofono-configs
 Obsoletes: ofono-configs-mer
 
+Obsoletes: qt5-qpa-surfaceflinger-plugin
+
 # Community builds may use the system partition
 %if 0%{?_obs_build_project:1}
 Requires: droid-system-pioneer-%{rpm_device}
