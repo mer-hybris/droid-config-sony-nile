@@ -46,7 +46,7 @@ You should see additional instructions to prepare your device for unlocking:
 * Once you have the unlock code press the "How to unlock bootloader"
 
 Now read and follow Sony's instructions on how to connect your device to your PC
-in fastbook mode and unlock the bootloader. Don't miss the step to enable 
+in fastboot mode and unlock the bootloader. Don't miss the step to enable 
 'OEM unlock' from within Android beforehand.
 
 Neither Linux nor OS X should require any additional drivers to connect to the 
