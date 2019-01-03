@@ -1,4 +1,2 @@
-# Create /dev/touchscreen symlink for first found multitouch event device.
-KERNEL=="event*", SUBSYSTEM=="input", ATTRS{name}=="synaptics_dsx", ACTION=="add", TEST!="/dev/touchscreen", SYMLINK+="touchscreen"
 # Drop the ID_INPUT_KEY as otherwise Qt will start tracking touch as keyboard with QEvdevKeyboardHandler
 KERNEL=="event*", SUBSYSTEM=="input", ATTRS{name}=="synaptics_dsx", ENV{ID_INPUT_KEY}="0"
