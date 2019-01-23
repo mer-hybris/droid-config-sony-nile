@@ -46,7 +46,7 @@ You should see additional instructions to prepare your device for unlocking:
 * Once you have the unlock code press the "How to unlock bootloader"
 
 Now read and follow Sony's instructions on how to connect your device to your PC
-in fastbook mode and unlock the bootloader. Don't miss the step to enable 
+in fastboot mode and unlock the bootloader. Don't miss the step to enable 
 'OEM unlock' from within Android beforehand.
 
 Neither Linux nor OS X should require any additional drivers to connect to the 
@@ -97,10 +97,16 @@ Connect your device to your PC in Fastboot mode as follows:
 * When flashing has finished, reboot your device into Sailfish X!
 
 Happy flashing :)
-  
+
 = TROUBLESHOOTING =
 
 Q: My Xperia™ shows only Sony logo when it is booting up, what to do?
 A: You should reflash the device with the instructions above. Verify that you 
    have the correct Vendor binary image from Sony.
-   
+
+Q: Flashing my Xperia™ XA2 fails on Linux with message "FAILED (remote: 'unknown
+   command')", what to do?
+A: Please try flashing from a USB2 port as sometimes doing it from USB3 tends to 
+   fail. For more details, please read:
+   https://jolla.zendesk.com/hc/en-us/articles/360012031854
+
