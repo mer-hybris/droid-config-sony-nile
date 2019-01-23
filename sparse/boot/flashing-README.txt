@@ -97,10 +97,16 @@ Connect your device to your PC in Fastboot mode as follows:
 * When flashing has finished, reboot your device into Sailfish X!
 
 Happy flashing :)
-  
+
 = TROUBLESHOOTING =
 
 Q: My Xperia™ shows only Sony logo when it is booting up, what to do?
 A: You should reflash the device with the instructions above. Verify that you 
    have the correct Vendor binary image from Sony.
-   
+
+Q: Flashing my Xperia™ XA2 fails on Linux with message "FAILED (remote: 'unknown
+   command')", what to do?
+A: Please try flashing from a USB2 port as sometimes doing it from USB3 tends to 
+   fail. For more details, please read:
+   https://jolla.zendesk.com/hc/en-us/articles/360012031854
+
