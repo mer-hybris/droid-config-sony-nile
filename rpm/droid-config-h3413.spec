@@ -26,6 +26,8 @@ Obsoletes: ofono-configs-mer
 
 Obsoletes: qt5-qpa-surfaceflinger-plugin
 
+Conflicts: apkd < 8.1.0
+
 # Community builds may use the system partition
 %if 0%{?_obs_build_project:1}
 Requires: droid-system-voyager-%{rpm_device}
