@@ -147,7 +147,6 @@ rm vendor.img
 chmod 755 flash.*
 
 FILES="flash* *.img* *.exe *.dll *-release"
-FILES_TO_COPY="*.urls"
 
 # Set supported devices in flash scripts
 if [ "@DEVICEMODEL@" = "h3113" ]; then
@@ -171,7 +170,6 @@ elif [ "@DEVICEMODEL@" = "h4413" ]; then
 fi
 
 mkdir -p ${RELEASENAME}
-cp ${FILES_TO_COPY} ${RELEASENAME}/
 
 mv ${FILES} ${RELEASENAME}/
 
