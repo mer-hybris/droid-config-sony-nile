@@ -6,7 +6,8 @@
 set tmpflashfile=tmpfile.txt
 set emmawebsite=https://developer.sony.com/develop/open-devices/get-started/flash-tool/download-flash-tool/
 set unlockwebsite=https://developer.sony.com/develop/open-devices/get-started/unlock-bootloader/
-set oemblobwebsite=https://developer.sony.com/file/download/software-binaries-for-aosp-oreo-android-8-1-kernel-4-4-nile/
+set oemblobversion=v17
+set oemblobwebsite=https://developer.sony.com/develop/open-devices/downloads/software-binaries/
 set fastbootkillretval=0
 set serialnumbers=
 
@@ -111,7 +112,7 @@ del %tmpflashfile% >NUL 2>NUL
 setlocal EnableDelayedExpansion
 
 :: Find the blob image. Make sure there's only one.
-for /r %%f in (*_nile.img) do (
+for /r %%f in (*_%oemblobversion%_nile.img) do (
 if not defined blobfilename (
 :: Take only the filename and strip out the path which otherwise is there.
 :: This is to make sure that we do not face issues later with e.g. spaces in the path etc.
@@ -119,7 +120,7 @@ set blobfilename=%%~nxf
 ) else (
 echo(
 echo More than one Sony Vendor image was found in this directory.
-echo Please remove any additional files ^(*_nile.img^).
+echo Please remove any additional files ^(*_%oemblobversion%_nile.img^).
 echo(
 exit /b 1
 )
@@ -134,6 +135,10 @@ echo(
 echo The Sony Vendor partition image was not found in the current
 echo directory. Please download it from %oemblobwebsite%
 echo and unzip it into this directory.
+echo(
+echo Ensure you download %oemblobversion% of the image, which can be found under:
+echo "Software binaries for AOSP Oreo (Android 8.1) - Kernel 4.4 - Nile"
+echo either (latest) or (%oemblobversion%)
 echo(
 echo Press enter to open the browser with the webpage.
 echo(
