@@ -69,7 +69,7 @@ partition image, ready to flash to your device.
 
 The Sony binary image for the Xperia™ XA2 can be found here:
 
-https://developer.sony.com/file/download/software-binaries-for-aosp-oreo-android-8-1-kernel-4-4-nile/
+https://developer.sony.com/file/download/software-binaries-for-aosp-oreo-android-8-1-kernel-4-4-nile-v16/
 
 The image will be compressed as a zip file. Once downloaded, extract the image 
 file from the zip and place it with the other Sailfish X files. It will be 
