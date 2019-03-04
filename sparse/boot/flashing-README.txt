@@ -67,13 +67,10 @@ license agreement.
 For convenience, these components have already been packaged into their own
 partition image, ready to flash to your device. 
 
-The Sony binary image for the Xperia™ XA2 can be found here:
+During the flashing process you will be asked to download the required image.
+It will be compressed as a zip file. Once downloaded, extract the image file
+from the zip and place it with the other Sailfish X files.
 
-https://developer.sony.com/file/download/software-binaries-for-aosp-oreo-android-8-1-kernel-4-4-nile/
-
-The image will be compressed as a zip file. Once downloaded, extract the image 
-file from the zip and place it with the other Sailfish X files. It will be 
-detected and flashed to your device during flashing.
 
 = STEP 4 : FLASHING SAILFISH X TO YOUR XPERIA™ =
 
