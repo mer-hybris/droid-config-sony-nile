@@ -194,7 +194,7 @@ done
 if [ -z $BLOBS ]; then
   echo; echo The Sony Vendor partition image was not found in the current directory. Please
   echo download it from
-  echo https://developer.sony.com/file/download/software-binaries-for-aosp-oreo-android-8-1-kernel-4-4-nile/
+  echo https://developer.sony.com/file/download/software-binaries-for-aosp-oreo-android-8-1-kernel-4-4-nile-v16/
   echo and unzip it into this directory.
   echo
   exit 1
