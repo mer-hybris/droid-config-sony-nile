@@ -6,7 +6,7 @@
 set tmpflashfile=tmpfile.txt
 set emmawebsite=https://developer.sony.com/develop/open-devices/get-started/flash-tool/download-flash-tool/
 set unlockwebsite=https://developer.sony.com/develop/open-devices/get-started/unlock-bootloader/
-set oemblobwebsite=https://developer.sony.com/file/download/software-binaries-for-aosp-oreo-android-8-1-kernel-4-4-nile/
+set oemblobwebsite=https://developer.sony.com/file/download/software-binaries-for-aosp-oreo-android-8-1-kernel-4-4-nile-v16/
 set fastbootkillretval=0
 set serialnumbers=
 
