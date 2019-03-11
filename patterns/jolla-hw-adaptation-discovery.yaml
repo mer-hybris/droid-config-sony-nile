@@ -17,6 +17,9 @@ Requires:
 # Telephony
 - ofono-ril-binder-plugin
 
+# NFC
+- nfcd-binder-plugin
+
 # Sensors
 - hybris-libsensorfw-qt5
 
