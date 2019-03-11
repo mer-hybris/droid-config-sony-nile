@@ -1,5 +1,5 @@
 [apps/jolla-camera/primary/image]
-imageResolution='5984x3392'
+imageResolution='5312x2988'
 videoResolution='1920x1080'
 viewfinderResolution='1440x1080'
 isoValues=[0, 100, 200, 400, 800, 1600]
@@ -8,7 +8,7 @@ focusDistanceValues=[8, 4, 16]
 flashValues=[1, 2, 4]
 exposureCompensationValues=[4, 2, 0, -2, -4]
 imageResolution_4_3='4208x3120'
-imageResolution_16_9='5984x3392'
+imageResolution_16_9='5312x2988'
 viewfinderResolution_4_3='1440x1080'
 viewfinderResolution_16_9='1920x1080'
 focusDistance=16
