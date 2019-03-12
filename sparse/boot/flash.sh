@@ -199,6 +199,7 @@ if [ -z $BLOBS ]; then
   echo Ensure you download $BLOBS_VERSION of the image, which can be found under:
   echo '"Software binaries for AOSP Oreo (Android 8.1) - Kernel 4.4 - Nile"'
   echo "either (latest) or ($BLOBS_VERSION) and unzip it into this directory."
+  echo Note: the ZIP file name may have a revision, for example "$BLOBS_VERSION"B.
   echo
   exit 1
 fi

@@ -139,6 +139,7 @@ echo(
 echo Ensure you download %oemblobversion% of the image, which can be found under:
 echo "Software binaries for AOSP Oreo (Android 8.1) - Kernel 4.4 - Nile"
 echo either (latest) or (%oemblobversion%) and unzip it into this directory.
+echo Note: the ZIP file name may have a revision, for example %oemblobversion%B.
 echo(
 echo Press enter to open the browser with the webpage.
 echo(
