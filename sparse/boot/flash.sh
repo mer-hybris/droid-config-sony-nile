@@ -193,13 +193,12 @@ for b in $(ls -1 ${BLOB_BIN_PATH}/*_${BLOBS_VERSION}_nile.img 2>/dev/null); do
 done
 
 if [ -z $BLOBS ]; then
-  echo; echo The Sony Vendor partition image was not found in the current directory. Please
-  echo download it from
+  echo; echo The Sony Vendor partition image was not found in the current directory.
+  echo Please download it from
   echo https://developer.sony.com/develop/open-devices/downloads/software-binaries/
   echo Ensure you download $BLOBS_VERSION of the image, which can be found under:
   echo '"Software binaries for AOSP Oreo (Android 8.1) - Kernel 4.4 - Nile"'
-  echo "either (latest) or ($BLOBS_VERSION)"
-  echo and unzip it into this directory.
+  echo "either (latest) or ($BLOBS_VERSION) and unzip it into this directory."
   echo
   exit 1
 fi
