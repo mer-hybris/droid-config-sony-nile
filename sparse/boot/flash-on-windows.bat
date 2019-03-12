@@ -132,13 +132,14 @@ echo Found '%blobfilename%' that will be used as vendor image. Continuing..
 :: Bail out if we don't have a blob image
 if not defined blobfilename (
 echo(
-echo The Sony Vendor partition image was not found in the current
-echo directory. Please download it from %oemblobwebsite%
-echo and unzip it into this directory.
+echo The Sony Vendor partition image was not found in the current directory.
+echo Please download it from
+echo %oemblobwebsite%
 echo(
 echo Ensure you download %oemblobversion% of the image, which can be found under:
 echo "Software binaries for AOSP Oreo (Android 8.1) - Kernel 4.4 - Nile"
-echo either (latest) or (%oemblobversion%)
+echo either (latest) or (%oemblobversion%) and unzip it into this directory.
+echo Note: the ZIP file name may have a revision, for example %oemblobversion%B.
 echo(
 echo Press enter to open the browser with the webpage.
 echo(
