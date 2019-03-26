@@ -4,5 +4,5 @@
 
 %define pixel_ratio 1.5
 
-%include rpm/droid-config-common.inc
+%include droid-config-common.inc
 %include droid-configs-device/droid-configs.inc
