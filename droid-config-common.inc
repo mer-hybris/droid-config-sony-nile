@@ -13,7 +13,7 @@ Obsoletes: ofono-configs-mer
 
 Obsoletes: qt5-qpa-surfaceflinger-plugin
 
-Conflicts: apkd < 8.1.0
+Conflicts: apkd < 8.1.0.31
 
 Requires: droid-system-%{device}-%{rpm_device}
 Requires: droid-system-vendor-%{device}-%{rpm_device}
