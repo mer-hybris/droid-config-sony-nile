@@ -23,6 +23,8 @@ echo 4. After this you should see the blue LED lit on Xperia, and it will be
 echo    ready for flashing
 echo(
 pause
+
+echo Verifying MD5 checksums...
 call :sleep 3
 
 :: Ensure that tools have valid md5sum before using them
@@ -35,7 +37,7 @@ set fastbootcmd_no_device=fastboot.exe
 set current_device=
 
 echo(
-echo Searching a compatible device...
+echo Searching for a compatible device...
 
 :: Ensure that we are flashing right device
 @DEVICES@
@@ -122,6 +124,7 @@ echo(
 echo More than one Sony Vendor image was found in this directory.
 echo Please remove any additional files ^(*_%oemblobversion%_nile.img^).
 echo(
+pause
 exit /b 1
 )
 )
