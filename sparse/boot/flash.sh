@@ -3,7 +3,7 @@
 # Contact: Matti Kosola <matti.kosola@jollamobile.com>
 #
 #
-# Copyright (c) 2018, Jolla Ltd.
+# Copyright (c) 2019, Jolla Ltd.
 # All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
