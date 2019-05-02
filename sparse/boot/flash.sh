@@ -109,6 +109,7 @@ for SERIALNO in $FASTBOOT_DEVICES; do
     ((++count))
   fi
 done
+IFS=" "
 
 echo "Found $count devices: $SERIALNUMBERS"
 
@@ -204,7 +205,6 @@ if [ -z $BLOBS ]; then
   exit 1
 fi
 
-IFS=' '
 for IMAGE in "${IMAGES[@]}"; do
   read partition ifile <<< $IMAGE
   echo "Flashing $partition partition.."
