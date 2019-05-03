@@ -3,7 +3,7 @@
 # Contact: Matti Kosola <matti.kosola@jollamobile.com>
 #
 #
-# Copyright (c) 2018, Jolla Ltd.
+# Copyright (c) 2019, Jolla Ltd.
 # All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
@@ -109,6 +109,7 @@ for SERIALNO in $FASTBOOT_DEVICES; do
     ((++count))
   fi
 done
+IFS=" "
 
 echo "Found $count devices: $SERIALNUMBERS"
 
@@ -122,6 +123,26 @@ TARGET_SERIALNO=$SERIALNUMBERS
 FASTBOOTCMD="${FASTBOOT_BIN_PATH}${FASTBOOT_BIN_NAME} -s $TARGET_SERIALNO $FASTBOOTEXTRAOPTS"
 
 echo "Fastboot command: $FASTBOOTCMD"
+
+ANDROIDVERSION=$($FASTBOOTCMD getvar version-baseband 2>&1 | head -n1)
+
+read -r VMAJOR VMINOR VPATCH<<<$(echo $ANDROIDVERSION | cut -d ' ' -f2 | cut -d '_' -f2 | cut -d '.' -f1,2,5 | tr . ' ')
+
+# Requirements in variables for easier testing
+RMAJOR=50
+RMINOR=1
+
+if (( $VMAJOR > $RMAJOR || $VMAJOR == $RMAJOR && $VMINOR > $RMINOR )); then
+  FIRMWAREVERSION=$(echo $ANDROIDVERSION | cut -d ' ' -f2 | cut -d '_' -f2)
+  echo; echo "The Sony Android version on your device is too recent (Android 9 or newer)."
+  echo "You need to have Android 8.1 in order for this installation to work."
+  echo "Unfortunately all known methods to downgrade from Android 9 to 8.1 will brick"
+  echo "your device."
+  echo; echo "Please create a ticket at our customer support for an update on this matter:"
+  echo "https://jolla.zendesk.com/hc/en-us/requests/new"
+  echo "Your device firmware version identifier is $FIRMWAREVERSION"
+  exit 1;
+fi
 
 if [ "$($FASTBOOTCMD getvar secure 2>&1 | head -n1 | cut -d ' ' -f2 )" == "yes" ]; then
   echo; echo "This device has not been unlocked, but you need that for flashing."
@@ -204,7 +225,6 @@ if [ -z $BLOBS ]; then
   exit 1
 fi
 
-IFS=' '
 for IMAGE in "${IMAGES[@]}"; do
   read partition ifile <<< $IMAGE
   echo "Flashing $partition partition.."
