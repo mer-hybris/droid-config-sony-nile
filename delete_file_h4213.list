@@ -1,5 +1,3 @@
-/var/lib/environment/compositor/droid-hal-device-pioneer.conf
-/var/lib/environment/compositor/droid-hal-device-voyager.conf
 /etc/dconf/db/vendor.d/lipstick-configs-pioneer.txt
 /etc/dconf/db/vendor.d/lipstick-configs-voyager.txt
 /etc/dconf/db/vendor.d/silica-configs-pioneer.txt
