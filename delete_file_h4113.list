@@ -3,8 +3,6 @@
 /usr/share/ssu/board-mappings.d/10-h3413.ini
 /usr/share/ssu/board-mappings.d/10-h4213.ini
 /usr/share/ssu/board-mappings.d/10-h4413.ini
-/var/lib/environment/compositor/droid-hal-device-discovery.conf
-/var/lib/environment/compositor/droid-hal-device-voyager.conf
 /etc/dconf/db/vendor.d/lipstick-configs-discovery.txt
 /etc/dconf/db/vendor.d/lipstick-configs-voyager.txt
 /etc/dconf/db/vendor.d/silica-configs-discovery.txt
