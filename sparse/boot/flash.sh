@@ -203,10 +203,10 @@ if [ -z ${BLOB_BIN_PATH} ]; then
 fi
 
 BLOBS=""
-BLOBS_VERSION=v17
-for b in $(ls -1 ${BLOB_BIN_PATH}/*_${BLOBS_VERSION}_nile.img 2>/dev/null); do
+for b in $(ls -1 ${BLOB_BIN_PATH}/*_{v16,v17}_nile.img 2>/dev/null); do
   if [ -n "$BLOBS" ]; then
-   echo; echo "More than one Sony Vendor image was found. Please remove any additional files."
+   echo; echo More than one supported Sony Vendor image was found in this directory.
+   echo Please remove any additional files.
    echo
    exit 1
   fi
@@ -214,13 +214,14 @@ for b in $(ls -1 ${BLOB_BIN_PATH}/*_${BLOBS_VERSION}_nile.img 2>/dev/null); do
 done
 
 if [ -z $BLOBS ]; then
-  echo; echo The Sony Vendor partition image was not found in the current directory.
+  echo; echo "The supported Sony Vendor partition image wasn't found in the current directory."
   echo Please download it from
   echo https://developer.sony.com/develop/open-devices/downloads/software-binaries/
-  echo Ensure you download $BLOBS_VERSION of the image, which can be found under:
+  echo Ensure you download the supported version of the image found under:
   echo '"Software binaries for AOSP Oreo (Android 8.1) - Kernel 4.4 - Nile"'
-  echo "either (latest) or ($BLOBS_VERSION) and unzip it into this directory."
-  echo Note: the ZIP file name may have a revision, for example "$BLOBS_VERSION"B.
+  echo and unzip it into this directory.
+  echo Note: information on which versions are supported is written in our Sailfish X
+  echo installation instructions online https://jolla.com/sailfishxinstall
   echo
   exit 1
 fi
