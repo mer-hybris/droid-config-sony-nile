@@ -178,9 +178,6 @@ exit /b 1
 )
 )
 
-echo(
-echo Found '%blobfilename%' that will be used as vendor image. Continuing..
-
 :: Bail out if we don't have a blob image
 if not defined blobfilename (
 echo(
@@ -199,6 +196,9 @@ pause
 start "" %oemblobwebsite%
 exit /b 1
 )
+
+echo(
+echo Found '%blobfilename%' that will be used as vendor image. Continuing..
 
 :: We want to print the fastboot commands so user can see what actually
 :: happens when flashing is done.
