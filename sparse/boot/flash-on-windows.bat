@@ -165,8 +165,8 @@ setlocal EnableDelayedExpansion
 :: Find the blob image. Make sure there's only one.
 for /r %%f in (*_%oemblobversion%_nile.img) do (
 if not defined blobfilename (
-:: Take only the filename and strip out the path which otherwise is there.
-:: This is to make sure that we do not face issues later with e.g. spaces in the path etc.
+REM Take only the filename and strip out the path which otherwise is there.
+REM This is to make sure that we do not face issues later with e.g. spaces in the path etc.
 set blobfilename=%%~nxf
 ) else (
 echo(
