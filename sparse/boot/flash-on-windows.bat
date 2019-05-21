@@ -6,7 +6,6 @@
 set tmpflashfile=tmpfile.txt
 set emmawebsite=https://developer.sony.com/develop/open-devices/get-started/flash-tool/download-flash-tool/
 set unlockwebsite=https://developer.sony.com/develop/open-devices/get-started/unlock-bootloader/
-set oemblobversion=v17
 set oemblobwebsite=https://developer.sony.com/develop/open-devices/downloads/software-binaries/
 set fastbootkillretval=0
 set serialnumbers=
@@ -163,35 +162,33 @@ del %tmpflashfile% >NUL 2>NUL
 setlocal EnableDelayedExpansion
 
 :: Find the blob image. Make sure there's only one.
-for /r %%f in (*_%oemblobversion%_nile.img) do (
+for /r %%f in (*_v16_nile.img *_v17_nile.img) do (
 if not defined blobfilename (
-:: Take only the filename and strip out the path which otherwise is there.
-:: This is to make sure that we do not face issues later with e.g. spaces in the path etc.
+REM Take only the filename and strip out the path which otherwise is there.
+REM This is to make sure that we do not face issues later with e.g. spaces in the path etc.
 set blobfilename=%%~nxf
 ) else (
 echo(
-echo More than one Sony Vendor image was found in this directory.
-echo Please remove any additional files ^(*_%oemblobversion%_nile.img^).
+echo More than one supported Sony Vendor image was found in this directory.
+echo Please remove any additional files.
 echo(
 pause
 exit /b 1
 )
 )
 
-echo(
-echo Found '%blobfilename%' that will be used as vendor image. Continuing..
-
 :: Bail out if we don't have a blob image
 if not defined blobfilename (
 echo(
-echo The Sony Vendor partition image was not found in the current directory.
+echo The supported Sony Vendor partition image wasn't found in the current directory
 echo Please download it from
 echo %oemblobwebsite%
 echo(
-echo Ensure you download %oemblobversion% of the image, which can be found under:
+echo Ensure you download the supported version of the image found under:
 echo "Software binaries for AOSP Oreo (Android 8.1) - Kernel 4.4 - Nile"
-echo either ^(latest^) or ^(%oemblobversion%^) and unzip it into this directory.
-echo Note: the ZIP file name may have a revision, for example %oemblobversion%B.
+echo and unzip it into this directory.
+echo Note: information on which versions are supported is written in our Sailfish X
+echo installation instructions online.
 echo(
 echo Press enter to open the browser with the webpage.
 echo(
@@ -199,6 +196,9 @@ pause
 start "" %oemblobwebsite%
 exit /b 1
 )
+
+echo(
+echo Found '%blobfilename%' that will be used as vendor image. Continuing..
 
 :: We want to print the fastboot commands so user can see what actually
 :: happens when flashing is done.
