@@ -63,7 +63,7 @@ Requires:
 - rfkill
 
 # enable device lock and allow to select untrusted software
-- jolla-devicelock-plugin-encsfa
+- sailfish-devicelock-fpd
 
 # For GPS
 - geoclue-provider-hybris
