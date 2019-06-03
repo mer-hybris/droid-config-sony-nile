@@ -12,6 +12,8 @@ Provides: ofono-configs
 Obsoletes: ofono-configs-mer
 
 Obsoletes: qt5-qpa-surfaceflinger-plugin
+Obsoletes: jolla-devicelock-daemon-encsfa
+Obsoletes: jolla-devicelock-plugin-encsfa
 
 Conflicts: apkd < 8.1.0.31
 
