@@ -1,6 +1,7 @@
 /etc/ofono/ril_subscription.d/dual-sim.conf
 /etc/dconf/db/vendor.d/lipstick-configs-pioneer.txt
 /etc/dconf/db/vendor.d/lipstick-configs-voyager.txt
+/etc/dconf/db/vendor.d/jolla-camera-hw.txt
 /etc/dconf/db/vendor.d/silica-configs-pioneer.txt
 /etc/dconf/db/vendor.d/silica-configs-voyager.txt
 /usr/share/ssu/board-mappings.d/10-h4113.ini

@@ -2,6 +2,7 @@
 /etc/dconf/db/vendor.d/lipstick-configs-discovery.txt
 /etc/dconf/db/vendor.d/silica-configs-pioneer.txt
 /etc/dconf/db/vendor.d/silica-configs-discovery.txt
+/etc/dconf/db/vendor.d/jolla-camera-hw-discovery.txt
 /usr/share/ssu/board-mappings.d/10-h4113.ini
 /usr/share/ssu/board-mappings.d/10-h4213.ini
 /usr/share/ssu/board-mappings.d/10-h4413.ini
