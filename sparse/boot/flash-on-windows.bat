@@ -89,53 +89,13 @@ exit /b 1
 :: Now we know which device we need to flash
 set fastbootcmd=%fastbootcmd_no_device% -s %current_device%
 
-:: Verify that the Sony release on the phone is compatible.
+:: Verify the Sony release version.
 @call :getvar version-baseband
 
 :: Take from e.g. 1311-2918_50.1.A.13.123 the first number set, i.e., 50.1
 for /f "tokens=2 delims=_" %%i in ('type %tmpflashfile%') do @set version1=%%i
-for /f "tokens=1,2,5 delims=." %%a in ('echo %version1%') do (
-  @set vmajor=%%a
-  @set vminor=%%b
-  @set vpatch=%%c
-)
 
-:: We only support devices that have been flashed with Android 8.1
-:: 50.1.x.x.x of the Sony Android delivery.
-@set rmajor=50
-@set rminor=1
-
-if %vmajor% GTR %rmajor% goto :error_too_new_version
-if %vmajor% LSS %rmajor% goto :version_ok
-
-if %vminor% GTR %rminor% goto :error_too_new_version
-if %vminor% LSS %rminor% goto :version_ok
-
-goto :version_ok
-
-:error_too_new_version
-echo(
-echo The Sony Android version on your device is too recent ^(Android 9 or newer^).
-echo You need to have Android 8.1 in order for this installation to work.
-echo(
-echo Unfortunately all known methods to downgrade from Android 9 to 8.1 will brick
-echo your device.
-echo(
-echo Please create a ticket at our customer support for an update on this matter:
-echo %jollacarewebsite%
-echo Your device firmware version identifier is %version1%
-echo(
-echo Press enter to open browser with the webpage.
-echo(
-pause
-start "" %jollacarewebsite%
-exit /b 1
-
-:version_ok
-
-echo(
-echo Firmware version identifier '%version1%' matches the compatible
-echo Android 8.1 version. Continuing...
+echo Firmware version identifier '%version1%'. Continuing...
 
 :: Check that device has been unlocked
 @call :getvar secure

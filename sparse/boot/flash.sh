@@ -126,23 +126,9 @@ echo "Fastboot command: $FASTBOOTCMD"
 
 ANDROIDVERSION=$($FASTBOOTCMD getvar version-baseband 2>&1 | head -n1)
 
-read -r VMAJOR VMINOR VPATCH<<<$(echo $ANDROIDVERSION | cut -d ' ' -f2 | cut -d '_' -f2 | cut -d '.' -f1,2,5 | tr . ' ')
+FIRMWAREVERSION=$(echo $ANDROIDVERSION | cut -d ' ' -f2 | cut -d '_' -f2)
 
-# Requirements in variables for easier testing
-RMAJOR=50
-RMINOR=1
-
-if (( $VMAJOR > $RMAJOR || $VMAJOR == $RMAJOR && $VMINOR > $RMINOR )); then
-  FIRMWAREVERSION=$(echo $ANDROIDVERSION | cut -d ' ' -f2 | cut -d '_' -f2)
-  echo; echo "The Sony Android version on your device is too recent (Android 9 or newer)."
-  echo "You need to have Android 8.1 in order for this installation to work."
-  echo "Unfortunately all known methods to downgrade from Android 9 to 8.1 will brick"
-  echo "your device."
-  echo; echo "Please create a ticket at our customer support for an update on this matter:"
-  echo "https://jolla.zendesk.com/hc/en-us/requests/new"
-  echo "Your device firmware version identifier is $FIRMWAREVERSION"
-  exit 1;
-fi
+echo "Your device firmware version identifier is $FIRMWAREVERSION"
 
 if [ "$($FASTBOOTCMD getvar secure 2>&1 | head -n1 | cut -d ' ' -f2 )" == "yes" ]; then
   echo; echo "This device has not been unlocked, but you need that for flashing."
