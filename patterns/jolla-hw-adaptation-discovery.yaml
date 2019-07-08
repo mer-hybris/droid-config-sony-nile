@@ -68,9 +68,6 @@ Requires:
 # For GPS
 - geoclue-provider-hybris
 
-# For devices with SD Card
-- udisks2
-
 # For FM radio on some QCOM devices
 #- qt5-qtmultimedia-plugin-mediaservice-irisradio
 #- jolla-mediaplayer-radio
