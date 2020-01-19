@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Contact: Matti Kosola <matti.kosola@jollamobile.com>
 #
