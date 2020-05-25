@@ -17,6 +17,9 @@ Obsoletes: jolla-devicelock-plugin-encsfa
 
 Conflicts: apkd < 8.1.0.31
 
+Obsoletes: audioflingerglue
+Obsoletes: pulseaudio-modules-droid-glue
+
 Requires: droid-system-%{device}-%{rpm_device}
 Requires: droid-system-vendor-%{device}-%{rpm_device}
 
