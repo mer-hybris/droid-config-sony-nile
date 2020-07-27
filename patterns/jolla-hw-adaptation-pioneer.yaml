@@ -3,7 +3,6 @@ Name: jolla-hw-adaptation-pioneer
 Requires:
 - droid-hal-pioneer
 - droid-hal-pioneer-img-boot
-- droid-hal-pioneer-img-recovery
 - droid-hal-pioneer-tools
 
 # Hybris packages
