@@ -17,13 +17,16 @@ Requires:
 
 - sailfish-content-graphics-z@ICON_RES@
 
-- jolla-settings-system-nfc
 - jolla-settings-system-flashlight
-- jolla-settings-networking-multisim
 
 - geoclue-provider-mlsdb
 - csd
 - mapplauncherd-booster-silica-qt5-media
+
+# NFC
+- nfcd-mce-plugin
+- nfcd-dbuslog-plugin
+- jolla-settings-system-nfc
 
 Summary: Jolla Configuration h3413
 
