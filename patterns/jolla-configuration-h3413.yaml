@@ -18,7 +18,6 @@ Requires:
 - sailfish-content-graphics-z@ICON_RES@
 
 - jolla-settings-system-flashlight
-- jolla-settings-networking-multisim
 
 - geoclue-provider-mlsdb
 - csd
