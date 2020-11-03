@@ -1,33 +1,7 @@
 Description: Pattern with packages for h4113 configurations
 Name: jolla-configuration-h4113
 Requires:
-- pattern:jolla-hw-adaptation-pioneer
-
-- droid-config-h4113-sailfish
-- droid-config-h4113-pulseaudio-settings
-- droid-config-h4113-policy-settings
-- droid-config-h4113-preinit-plugin
-- droid-config-h4113-flashing
-- droid-config-h4113-bluez5
-- droid-hal-version-h4113
-
-- patterns-sailfish-applications
-- patterns-sailfish-ui
-- patterns-sailfish-cellular-apps
-
-- sailfish-content-graphics-z@ICON_RES@
-
-- jolla-settings-system-flashlight
-- jolla-settings-networking-multisim
-
-- geoclue-provider-mlsdb
-- csd
-- mapplauncherd-booster-silica-qt5-media
-
-# NFC
-- nfcd-mce-plugin
-- nfcd-dbuslog-plugin
-- jolla-settings-system-nfc
+- patterns-sailfish-device-configuration-h4113
 
 Summary: Jolla Configuration h4113
 

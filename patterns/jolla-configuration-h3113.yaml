@@ -1,32 +1,7 @@
 Description: Pattern with packages for h3113 configurations
 Name: jolla-configuration-h3113
 Requires:
-- pattern:jolla-hw-adaptation-pioneer
-
-- droid-config-h3113-sailfish
-- droid-config-h3113-pulseaudio-settings
-- droid-config-h3113-policy-settings
-- droid-config-h3113-preinit-plugin
-- droid-config-h3113-flashing
-- droid-config-h3113-bluez5
-- droid-hal-version-h3113
-
-- patterns-sailfish-applications
-- patterns-sailfish-ui
-- patterns-sailfish-cellular-apps
-
-- sailfish-content-graphics-z@ICON_RES@
-
-- jolla-settings-system-flashlight
-
-- geoclue-provider-mlsdb
-- csd
-- mapplauncherd-booster-silica-qt5-media
-
-# NFC
-- nfcd-mce-plugin
-- nfcd-dbuslog-plugin
-- jolla-settings-system-nfc
+- patterns-sailfish-device-configuration-h3113
 
 Summary: Jolla Configuration h3113
 
