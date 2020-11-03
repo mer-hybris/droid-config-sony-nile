@@ -6,6 +6,8 @@
 
 %include droid-config-common.inc
 %include droid-configs-device/droid-configs.inc
+%include patterns/patterns-sailfish-device-adaptation-pioneer.inc
+%include patterns/patterns-sailfish-device-configuration-h3113.inc
 
 %pretrans -p <lua>
 path = "/lib/firmware"

@@ -1,0 +1,31 @@
+%package -n patterns-sailfish-device-configuration-h3113
+Summary: Jolla Configuration h3113
+Requires: patterns-sailfish-device-configuration-common-h3113
+Requires: patterns-sailfish-device-adaptation-pioneer
+
+Requires: droid-config-h3113-sailfish
+Requires: droid-config-h3113-pulseaudio-settings
+Requires: droid-config-h3113-policy-settings
+Requires: droid-config-h3113-preinit-plugin
+Requires: droid-config-h3113-flashing
+Requires: droid-config-h3113-bluez5
+Requires: droid-hal-version-h3113
+
+Requires: patterns-sailfish-cellular-apps
+
+Requires: sailfish-content-graphics-z%{icon_res}
+
+Requires: jolla-settings-system-flashlight
+
+Requires: geoclue-provider-mlsdb
+Requires: mapplauncherd-booster-silica-qt5-media
+
+# NFC
+Requires: nfcd-mce-plugin
+Requires: nfcd-dbuslog-plugin
+Requires: jolla-settings-system-nfc
+
+%description -n patterns-sailfish-device-configuration-h3113
+Pattern with packages for h3113 configurations
+
+%files -n patterns-sailfish-device-configuration-h3113
