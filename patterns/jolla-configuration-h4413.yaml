@@ -1,7 +1,0 @@
-Description: Pattern with packages for h4413 configurations
-Name: jolla-configuration-h4413
-Requires:
-- patterns-sailfish-device-configuration-h4413
-
-Summary: Jolla Configuration h4413
-
