@@ -10,3 +10,4 @@
 /etc/dconf/db/vendor.d/silica-configs-discovery.txt
 /etc/dconf/db/vendor.d/silica-configs-voyager.txt
 /etc/dconf/db/vendor.d/jolla-camera-hw-discovery.txt
+/etc/mce/60-memnotify-nile-4gb.conf
