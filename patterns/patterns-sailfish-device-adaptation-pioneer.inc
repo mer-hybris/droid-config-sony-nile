@@ -20,7 +20,7 @@ Requires: ofono-ril-binder-plugin
 Requires: nfcd-binder-plugin
 
 # Sensors
-Requires: hybris-libsensorfw-qt5
+Requires: hybris-libsensorfw-qt5-hal
 
 # Vibra
 Requires: ngfd-plugin-native-vibrator
