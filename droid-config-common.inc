@@ -4,6 +4,9 @@
 %define provides_own_board_mapping 1
 %define out_of_image_files 1
 
+Conflicts: appsupport-system < 11.0.0
+Conflicts: appsupport-system > 11.0.0
+
 # Device-specific usb-moded configuration
 Provides: usb-moded-configs
 
