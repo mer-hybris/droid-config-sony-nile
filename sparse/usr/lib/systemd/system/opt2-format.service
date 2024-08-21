@@ -1,0 +1,7 @@
+[Unit]
+Description=Format for /opt2
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/bin/sh -c 'DEV=/dev/mmcblk0p78; CACHE=/var/cache/appsupport; FORMAT_DONE=$CACHE/opt2-format-done; NO_MOUNT=$CACHE/opt2-no-mount; if [ -f "$FORMAT_DONE" ]; then exit 0; fi; if pvdisplay $DEV &>/dev/null; then mkdir -p $CACHE; touch $FORMAT_DONE; touch $NO_MOUNT; exit 0; fi; if [ "$(e2label $DEV)" != "opt2" ]; then mkfs.ext4 -F -L opt2 $DEV; fi; mkdir -p $CACHE; touch $FORMAT_DONE; exit 0'
