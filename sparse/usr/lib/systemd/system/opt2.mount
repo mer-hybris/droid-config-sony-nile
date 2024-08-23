@@ -1,0 +1,12 @@
+[Unit]
+Description=Mount for /opt2
+Requires=opt2-format.service
+After=opt2-format.service
+ConditionPathExists=!/var/cache/appsupport/opt2-no-mount
+
+[Mount]
+What=/dev/mmcblk0p78
+Where=/opt2
+Type=ext4
+TimeoutSec=10
+DirectoryMode=0755
