@@ -1,6 +1,6 @@
 = SAILFISH X FOR SONY XPERIA™ XA2 FLASHING GUIDE =
 
-= FOR LINUX, WINDOWS AND OS X =
+= FOR LINUX, WINDOWS AND MACOS =
 
 = STEP 1: GETTING AN XPERIA™ XA2 =
 
@@ -49,13 +49,13 @@ Now read and follow Sony's instructions on how to connect your device to your PC
 in fastboot mode and unlock the bootloader. Don't miss the step to enable 
 'OEM unlock' from within Android beforehand.
 
-Neither Linux nor OS X should require any additional drivers to connect to the 
+Neither Linux nor macOS should require any additional drivers to connect to the
 device in fastboot mode, but you will need to have installed the fastboot
 command itself: 
 
 * Debian/Ubuntu/.deb distros: apt-get install android-tools-fastboot
 * Fedora: yum install android-tools
-* OS X: brew install android-sdk
+* macOS: brew install --cask android-platform-tools
 
 = STEP 3: GETTING THE SONY VENDOR BINARY IMAGE =
 
@@ -86,7 +86,7 @@ Connect your device to your PC in Fastboot mode as follows:
   needed for the unlocking process. If you need to install them, see the
   instructions in Step 3 above.
 * Launch the correct flashing script for your platform:
-  * On Linux and OS X, use flash.sh
+  * On Linux and macOS, use flash.sh
   * On Windows 7, 8 & 10, double-click 'flash-on-windows.bat'. If Windows warns
     you that it 'Protected your PC' by stopping the script from launching, click
     'More Info' then 'Run anyway'.
